@@ -4,12 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Momentum</title>
   </head>
   <body>
-    <h2 id="clock"></h2>
-    <img id="backgroundImg" class="background-img" />
+    <div class="container">
+      <h2 id="clock" class="child-clock"></h2>
+      <form id="login-form">
+        <input
+          type="text"
+          class="child-login"
+          placeholder="What is your name?"
+        />
+      </form>
+    </div>
+    <script src="js/login.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/background.js"></script>
   </body>
