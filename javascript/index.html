@@ -2,22 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Mementum App</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Momentum</title>
   </head>
-  <body onload="superCongratulation()">
-    <h1>Random Number Game</h1>
-    <h2>
-      Generate a number between 0 and <input id="user-limit" type="number" />
-    </h2>
-    <h3>
-      Guess the number: <input id="user-choice" type="number" />
-      <button id="play-btn">Play!</button>
-    </h3>
-    <h3 class="hidden" id="user-score">You chose: , the machine chose: .</h3>
-    <h3 class="hidden" id="user-result">You lost!</h3>
-    <h1 class="hidden" id="user-cong">Congratulation!!</h1>
-    <script src="app.js"></script>
+  <body>
+    <h2 id="clock"></h2>
+    <img id="backgroundImg" class="background-img" />
+    <script src="js/clock.js"></script>
+    <script src="js/background.js"></script>
   </body>
 </html>
