@@ -13,6 +13,7 @@ function onLoginSubmit(ev) {
   loginForm.classList.add(HIDDEN_CLASSNAME);
   greeting.innerText = `Hello ${username}`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
+  todoForm.classList.remove(HIDDEN_CLASSNAME);
 }
 
 loginForm.addEventListener("submit", onLoginSubmit);

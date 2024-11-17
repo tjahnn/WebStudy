@@ -13,6 +13,7 @@ function saveTodos() {
 function loadTodos() {
   toDos = [];
   loadedtodos = JSON.parse(localStorage.getItem(TODOS_KEY));
+  if (null == loadedtodos) return;
   loadedtodos.forEach((ele) => {
     toDos.push(ele);
   });
